@@ -34,12 +34,12 @@ grid.set(3, 4, "D4");
 grid.set(4, 4, "E4");
 // console.log(grid.north(1, 0));
 // console.log(grid.south(2, 0));
-console.log(grid.west(1, 1));
-console.log(grid.east(3, 2));
-console.log(grid.indexFor(1, 0));
+//console.log(grid.west(1, 1));
+//console.log(grid.east(3, 2));
+//console.log(grid.indexFor(1, 0));
 // console.log(grid.get(1,0));
-console.log(grid.neighbours(1, 1));
+//console.log(grid.neighbours(1, 1));
 //console.log(grid.neighboursValue(1,1));
-console.log(grid.rowColFor(5));
+console.log(grid.neighboursCount(1,1));
 
 grid.dump();

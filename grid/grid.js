@@ -45,6 +45,33 @@ export class Grid {
         return neighbours;
     }
 
+    neighboursCount(row, col) {
+        if (row >= this.rows.length || col >= this.cols.length || row < 0 || col < 0) {
+            return undefined;
+        }
+
+        let neighbours = [];
+
+        let north = this.north(row, col);
+        let north_west = this.grid[row - 1][col - 1];
+        let north_east = this.grid[row - 1][col + 1];
+        let south_west = this.grid[row + 1][col - 1];
+        let south_east = this.grid[row + 1][col + 1];
+        let south = this.south(row, col);
+        let west = this.west(row, col);
+        let east = this.east(row, col);
+
+        neighbours.push(north, south, east, west, north_west, north_east, south_east, south_west);
+
+        let count = 0;
+        for (const neighbour of neighbours) {
+            if (neighbour !== undefined) {
+            count++;
+            }
+        }
+        return count;
+    }
+
     neighboursValue(row, col) {
         if (row > this.rows.length && col > this.cols.length) {
             return undefined;
