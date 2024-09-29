@@ -41,5 +41,6 @@ grid.set(4, 4, "E4");
 //console.log(grid.neighbours(1, 1));
 //console.log(grid.neighboursValue(1,1));
 console.log(grid.neighboursCount(1,1));
+grid.fill(0)
 
 grid.dump();
