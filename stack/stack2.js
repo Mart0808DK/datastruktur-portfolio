@@ -33,12 +33,24 @@ export class Stack2 {
         return this.head ? this.head.data : null;
     }
 
-    isEmpty() {
-        return this.lenght === 0;
-    }
-
     size() {
         return this.lenght;
+    }
+
+    get(index) {
+        let current = this.head;
+        let i = 0;
+
+        while (current) {
+            if (i === index) {
+                return current.data;
+            }
+
+            current = current.next;
+            i++;
+        }
+
+        return null;
     }
 }
 

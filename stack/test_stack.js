@@ -23,10 +23,12 @@ function main() {
     stack2.push(1);
     stack2.push(2);
     stack2.push(3);
+    console.log(stack2.size());
+    console.log(stack2.get(1));
+    
     console.log(stack2.pop());
     console.log(stack2.size());
 
     console.log(stack2.peek());
-    console.log(stack2.isEmpty());
 
 }
