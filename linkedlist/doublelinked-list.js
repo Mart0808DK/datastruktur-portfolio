@@ -14,7 +14,7 @@ export class DoubleLinkedList {
     }
 
     addNodeLast(node) {
-        const newNode = node;
+        const newNode = node;   
         const lastNode = this.tail;
 
         if(this.head == null && this.tail == null) {
