@@ -37,18 +37,3 @@ function binarySearchRecursive(search, values, min, max, compare = comparenum) {
 let index = binarySearchRecursive(22, values, 0, values.length - 1);
 
 console.log(`Talet fundet på ${index}`);
-
-// if (start > end) {
-//     return -1;
-// }
-
-// let middle = start + Math.floor((end - start) / 2);
-// let com = compare(search, values[middle]);
-
-// if (com == 0) {
-//     return middle;
-// } else if (com < 0) {
-//     return binarySearchRecursive(search, values, start, middle - 1, comparator);
-// } else {
-//     return binarySearchRecursive(search, values, middle + 1, end, comparator);
-// }
