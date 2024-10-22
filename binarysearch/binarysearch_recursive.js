@@ -18,7 +18,7 @@ function comparenum(num1, num2) {
 
 function binarySearchRecursive(search, values, min, max, compare = comparenum) {
     if (min > max) {
-        return -1; // Base case: element not found
+        return -1;
     }
     let middle = min + Math.floor((max - min) / 2);
     let com = compare(search, values[middle]);
